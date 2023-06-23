@@ -4,17 +4,14 @@ class CountriesController < ApplicationController
 
   # GET /countries
   def index
-    @countries = Country.all
-
+    @countries = Country.all.order(id: :desc)
     render json: @countries
   end
 
-  # GET /countries/1
   def show
     render json: @country
   end
 
-  # POST /countries
   def create
     @country = Country.new(country_params)
 
@@ -25,7 +22,6 @@ class CountriesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /countries/1
   def update
     if @country.update(country_params)
       render json: @country
@@ -34,19 +30,16 @@ class CountriesController < ApplicationController
     end
   end
 
-  # DELETE /countries/1
   def destroy
     @country.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_country
       @country = Country.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def country_params
-      params.require(:country).permit(:name, :area_total, :population_size, :capital_city)
+      params.require(:country).permit(:name, :area_total, :population_size, :capital_city, :desc, :density)
     end
 end
