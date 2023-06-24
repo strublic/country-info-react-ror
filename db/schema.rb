@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_23_183110) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_24_123704) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,6 +23,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_23_183110) do
     t.datetime "updated_at", null: false
     t.string "desc"
     t.float "density"
+    t.index ["capital_city"], name: "index_countries_on_capital_city"
+    t.index ["name"], name: "index_countries_on_name"
   end
 
   create_table "users", force: :cascade do |t|
