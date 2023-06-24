@@ -34,6 +34,19 @@ class CountriesController < ApplicationController
     @country.destroy
   end
 
+
+  def search
+    country = "%#{params[:country]}%"
+
+    if params[:country].present?
+      @countries = Country.where("countries.name ILIKE ? OR countries.capital_city ILIKE ?", country, country).uniq
+    else
+      @countries = Country.all.uniq
+    end
+
+    render json: @countries
+  end
+
   private
     def set_country
       @country = Country.find(params[:id])
