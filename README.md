@@ -1,24 +1,25 @@
 # README
+Project created to list countries with details using auth API to CRUD Countries
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project with Ruby on Rails in backend and React in frontend.
 
-Things you may want to cover:
+Rspec test covering all API requests through backend.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
+* Versions
+  Ruby "3.2.2"
+  Rails "7.0.5"
+  PostgreSQL "1.1"
 
 * Database initialization
+`rake db:create`
+`rake db:migrate`
+`rake db:seed`
 
-* How to run the test suite
+* Starting backend server at port: 3000 (local environment)
+`rails server -p 3000`
 
-* Services (job queues, cache servers, search engines, etc.)
+Go to frontend project: `https://github.com/strublic/country-info-react-ror-frontend`
 
-* Deployment instructions
-
-* ...
+Then do a login in frontend project with
+username: *teste*
+password: *teste*
