@@ -5,21 +5,21 @@ Project with Ruby on Rails in backend and React in frontend.
 
 Rspec test covering all API requests through backend.
 
-* Versions
-  Ruby "3.2.2"
-  Rails "7.0.5"
+* Versions <br/>
+  Ruby "3.2.2" <br/>
+  Rails "7.0.5" <br/>
   PostgreSQL "1.1"
 
-* Database initialization
-`rake db:create`
-`rake db:migrate`
+* Database initialization<br/>
+`rake db:create`<br/>
+`rake db:migrate`<br/>
 `rake db:seed`
 
-* Starting backend server at port: 3000 (local environment)
+* Starting backend server at port: 3000 (local environment)<br/>
 `rails server -p 3000`
 
-Go to frontend project: `https://github.com/strublic/country-info-react-ror-frontend`
+Go to frontend project: `https://github.com/strublic/country-info-react-ror-frontend`<br/>
 
-Then do a login in frontend project with
-username: *teste*
+Then do a login in frontend project with<br/>
+username: *teste*<br/>
 password: *teste*
