@@ -10,15 +10,18 @@ Rspec test covering all API requests through backend.
   Rails "7.0.5" <br/>
   PostgreSQL "1.1"
 
-* Database initialization<br/>
+### Steps
+1* Run `bundle install`
+
+2* Database initialization<br/>
 `rake db:create`<br/>
 `rake db:migrate`<br/>
 `rake db:seed`
 
-* Starting backend server at port: 3000 (local environment)<br/>
+3* Starting backend server at port: 3000 (local environment)<br/>
 `rails server -p 3000`
 
-Start frontend project: `https://github.com/strublic/country-info-react-ror-frontend`<br/>
+4* Start frontend project: `https://github.com/strublic/country-info-react-ror-frontend`<br/>
 
 Then do a login in frontend project with<br/>
 username: *teste*<br/>
