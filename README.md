@@ -18,7 +18,7 @@ Rspec test covering all API requests through backend.
 * Starting backend server at port: 3000 (local environment)<br/>
 `rails server -p 3000`
 
-Go to frontend project: `https://github.com/strublic/country-info-react-ror-frontend`<br/>
+Start frontend project: `https://github.com/strublic/country-info-react-ror-frontend`<br/>
 
 Then do a login in frontend project with<br/>
 username: *teste*<br/>
